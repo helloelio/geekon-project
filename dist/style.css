@@ -82,7 +82,7 @@ header {
   display: flex;
   transition: 0.3 ease;
   margin-top: 15px;
-  a-border-bottom: 2px solid #06baba;
+  border-bottom: 2px solid #06baba;
 }
 .navigation a {
   font-weight: 700;
@@ -311,13 +311,12 @@ footer .footer-block {
 .menu__btn {
   display: flex;
   align-items: center;
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
   right: 20px;
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 10;
 }
 
 .menu__btn > span,
@@ -354,6 +353,7 @@ footer .footer-block {
   background-color: #eceff1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
+  z-index: 9;
 }
 .menu__box a {
   margin-left: 80px;
